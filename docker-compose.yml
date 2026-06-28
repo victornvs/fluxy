@@ -1,0 +1,14 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: fluxy-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - fluxy_mongo_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: fluxy
+
+volumes:
+  fluxy_mongo_data:
