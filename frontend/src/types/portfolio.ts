@@ -29,6 +29,13 @@ export interface AuthUser {
   role: 'admin' | 'client';
   plan: string;
   avatar?: string;
+
+  // Dados de contato
+  phone?: string;
+  whatsapp?: string;
+
+  // Preferências
+  notifications?: boolean;
 }
 
 export interface AuthResponse {
