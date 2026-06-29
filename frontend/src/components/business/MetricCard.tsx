@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import { LucideIcon, TrendingUp, TrendingDown } from 'lucide-react';
 import { Card } from '@/components/ui/Card';
+import React from 'react';
 
 interface MetricCardProps {
   title: string;

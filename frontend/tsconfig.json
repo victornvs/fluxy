@@ -16,7 +16,9 @@
     "plugins": [{ "name": "next" }],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["node", "react", "react-dom"],
+    "typeRoots": ["./node_modules/@types"]
   },
   "include": [
     "next-env.d.ts",
